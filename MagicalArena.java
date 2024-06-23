@@ -17,4 +17,19 @@ public class MagicalArena {
             return health;
         }
 
+        public int getStrength() {
+            return strength;
+        }
+
+        public int getAttack() {
+            return attack;
+        }
+
+        public void takeDamage(int damage) {
+            this.health -= damage;
+            if (this.health < 0) {
+                this.health = 0;
+            }
+        }
+
     }}
