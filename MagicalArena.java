@@ -32,4 +32,13 @@ public class MagicalArena {
             }
         }
 
-    }}
+        public boolean isAlive() {
+            return this.health > 0;
+        }
+
+        public int rollDice() {
+            return (new Random().nextInt(6)) + 1;
+        }
+    }
+
+    }
